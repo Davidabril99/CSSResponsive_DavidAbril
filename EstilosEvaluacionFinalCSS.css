@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url(https://fonts.googleapis.com/css?family=Dancing+Script);
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+body{
+  width: 98%;
+  max-width: 1200px;
+  margin:0 auto;
+  font-family: "Dancing Script", cursive;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  background-color: #655B5B;
+}
+h1{
+  color:white;
+  text-shadow: 2px #02010a;
+  padding-left: 30px;
+}
+nav{
+  background-color: #97A145;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+
+}
+nav>a{
+  text-decoration: none;
+  color: white;
+  flex: 1;
+}
+.aaa:hover{
+  opacity: 0.5
+}
+span{
+  color: #DCDAD0;
+}
+
+.contenedor{
+  background-color: #AF553A;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagen_central{
+  width: 100%;
+
+  text-align: center;
+}
+
+.a1{
+  width: 60%;
+  padding: 5px;
+  border-radius: 18px;
+ animation: a1-animation 2.5s;
+ transition: width 0.5s;
+}
+.a1:hover{
+  width: 75%;
+}
+@keyframes a1-animation {
+  0%{
+    position: relative;
+    left: 200px;
+    opacity: 0.2
+  }
+
+100% {
+position: relative;
+left: 0px;
+opacity: 1
+}
+}
+@keyframes secundaria-animation {
+  0%{
+    position: relative;
+    right: : 300px;
+    opacity: 0.2
+  }
+
+100% {
+position: relative;
+right: : 0px;
+opacity: 1
+}
+}
+.contenedor2{
+  width: 100%;
+  background-color: #d5c75f ;
+  display: flex;
+
+
+}
+.imagen_secundaria1{
+  flex: 1;
+ text-align: center;
+ border-radius: 12px;
+ animation: secundaria-animation 2.5s;
+}
+.imagen_secundaria2{
+  flex: 1;
+  text-align: center;
+  border-radius: 12px;
+  animation: secundaria-animation 2.5s;
+}
+.is1, .is2{
+  width: 80%;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 30px;
+  max-width: 450px;
+  animation: secundaria-animation 2.5s;
+
+}
+.is1{
+  transition: transform 0.5s;
+}
+.is1:hover{
+  transform: rotate(-10deg);
+  box-shadow:  0px 1px 0px 1px
+}
+.is2{
+  transition: transform 0.5s;
+}
+.is2:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 1px 0 0 #02010a;
+}
+
+
+.contenedor3{
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+  display: flex;
+
+}
+div [class^="foot"]{
+  flex: 1;
+  text-align: center;
+  color: black !important
+}
+.red{
+  max-width: 20px
+}
+.aa{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+
+@media (min-width:400px) and (max-width:800px) {
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+
+  }
+  header{
+  border-radius: 0;
+  padding: 20px;
+  }
+  .contenedor{
+    padding: 0
+  }
+  .a1{
+    width: 100%;
+    padding: 0.1px;
+    border-radius: 0px;
+
+  }
+  .a1:hover{
+    width: 100%;
+  }
+  .contenedor2{
+    width: 100%;
+    display: block;
+    margin-top: 1px;
+    padding: 10px;
+  }
+ .imagen_secundaria1, .imagen_secundaria2{
+   width: 100%;
+
+ }
+ .contenedor3{
+   display: block;
+   font-size: 1em;
+   margin: 0;
+   padding-top: 5px
+ }
+
+}
